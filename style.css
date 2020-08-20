@@ -1,0 +1,123 @@
+body {
+  background: beige;
+  font-size: 18px;
+}
+
+aside {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  padding: 40px;
+  margin: 8px;
+  border: 1px solid #aaa;
+  background: white;
+  font-weight: bold;
+}
+
+main {
+  padding: 0 150px;
+}
+
+main > aside {
+  position: fixed;
+  height: calc(100vh - 230px);
+  top: 124px;
+  left: 8px;
+}
+
+main > aside.right {
+  left: auto;
+  right: 8px;
+}
+
+main > article {
+  flex: 1 1 auto;
+}
+
+#hero .actions a {
+  margin-right: 16px;
+  display: inline-block;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+}
+
+#hero-body {
+  flex: 1 1 auto;
+  padding: 0 80px;
+}
+
+#hero-body h1 {
+  font-size: 48px;
+}
+
+section {
+  padding: 0 80px;
+}
+
+.section-title {
+  font-size: 40px;
+}
+.horizontal-list {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#popup-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.6;
+  z-index: 50;
+  display: none;
+}
+
+#popup {
+  position: fixed;
+  z-index: 100;
+  width: 400px;
+  border: 1px solid #aaa;
+  background: white;
+  top: 300px; left: 200px;
+  padding: 40px;
+  box-shadow: 4px 4px 0 red;
+  display: none;
+}
+
+#popup.show, #popup-cover.show {
+  display: block;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+#purchase-button {
+  font-size: 20px;
+  padding: 8px 16px;
+  border: 1px solid #aaa;
+}
+
+#buy-own {
+  margin-top: 48px;
+  text-align: center;
+  background: white;
+  padding: 32px;
+}
+
+#buy-own .section-title {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
